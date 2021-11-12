@@ -5,13 +5,11 @@ function show(){
 
 var counter = 0;
 
-// function appendChild(){
-//     document.getElementById("progress").innerHTML += ".";
-// }
-
 function changeProgress(){
     counter++;
-    setTimeout(function(){document.getElementById("progress").innerHTML += "...";}, 500);
+    setTimeout(function(){document.getElementById("progress").innerHTML += ".";}, 500);
+    setTimeout(function(){document.getElementById("progress").innerHTML += ".";}, 800);
+    setTimeout(function(){document.getElementById("progress").innerHTML += ".";}, 1000);
     switch (counter) {
         case 1:
             document.getElementById("progress").innerHTML = "Loading resources";
