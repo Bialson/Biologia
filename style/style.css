@@ -19,5 +19,71 @@ body{
 
 #container{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
     color: white;
+}
+
+#box{
+    background: white;
+    width: 700px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    color: black;
+    font-size: 25px;
+}
+
+#box #bar{
+    padding: 20px;
+}
+
+#box #bar hr{
+    border:none;
+    height: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin-top: -40px;
+}
+
+#box #quest{
+    padding: 50px;
+}
+
+#box #quest p{
+    font-weight: 600;
+}
+
+#box #quest ul{
+    list-style: none;
+    margin-left: 26px;
+}
+
+#box #quest li{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-left: 20px;
+}
+
+#box #quest .selected{
+    border: 2px solid #0099ff;
+    background:#e6f5ff;
+}
+
+#box #quest .true{
+    border: 2px solid #339933;
+    background:#d9f2d9;
+}
+
+#box #quest .false{
+    border: 2px solid #992600;
+    background: #ffcccc;
 }
