@@ -1,6 +1,12 @@
 function show(){
     document.getElementById("loader").style.display = "none";
     document.getElementById("container").style.display = "flex";
+    document.getElementById("bgvid").style.display = "flex";
+}
+
+function startGame(){
+    document.getElementById("start").style.display = "none";
+    document.getElementById("box").style.display = "flex";
 }
 
 var counter = 0;
