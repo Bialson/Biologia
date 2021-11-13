@@ -9,6 +9,28 @@ function startGame(){
     document.getElementById("box").style.display = "flex";
 }
 
+function selectAnswer(){
+    var option = document.getElementsByClassName("quest");
+    for(let i = 0; i < option.length; i++){
+        option[i].addEventListener("click", function(){
+            option[i].classList.add("selected");
+        })
+    }
+    setTimeout(checkAnswer, 4000);
+}
+
+function checkAnswer(){
+    var option = document.getElementsByClassName("selected");
+    for(let i = 0; i < option.length; i++){
+        if(option[i].innerHTML == "Lorem ipsum dolor sit amet."){
+            option[i].classList.add("true");
+        }
+        else{
+            option[i].classList.add("false");
+        }
+    }
+}
+
 var counter = 0;
 
 function changeProgress(){
