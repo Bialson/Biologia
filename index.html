@@ -38,11 +38,24 @@
         </div>
         <div id="box">
             <div id="bar">
-                <p>Quiz application</p>
-                <hr>
+                <p id="bar-title">Quiz application</p>
+                <progress id="progressBar" max="100" value="0"></progress>
+                <p id="bar-progress">0% progress</p>
             </div>
-            <div id="quest">
-                <p>1. What does HTML stand for?</p>
+            <hr>
+            <div id="quest" class="quest 1">
+                <p id="quest-title">What is the full form of HTTP?</p>
+                <br>
+                <ul>
+                    <li class="quest">Lorem ipsum dolor sit amet aper.</li>
+                    <li class="quest">Lorem ipsum dolor sit amet.</li>
+                    <li class="quest">Lorem ipsum dolor sit amet.</li>
+                    <li class="quest">Lorem ipsum dolor sit amet dolor.</li>
+                </ul>
+                <button id="next">Next</button>
+            </div>
+            <div id="quest1" class="quest 2">
+                <p id="quest-title">What is the full form of HTTP?</p>
                 <br>
                 <ul>
                     <li class="quest">Lorem ipsum dolor sit amet aper.</li>

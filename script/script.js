@@ -9,14 +9,20 @@ function startGame(){
     document.getElementById("box").style.display = "flex";
 }
 
+let countAnswer = -1;
+
 function selectAnswer(){
-    var option = document.getElementsByClassName("quest");
-    for(let i = 0; i < option.length; i++){
-        option[i].addEventListener("click", function(){
-            option[i].classList.add("selected");
-        })
+    const answer = document.querySelectorAll(".quest");
+    for(let i = 0; i < answer.length; i++){
+        answer[i].addEventListener("click", function(){
+            this.classList.add("selected");
+        });
     }
-    setTimeout(checkAnswer, 4000);
+    countAnswer += 1;
+    console.log(countAnswer);
+    if(countAnswer == 4){
+        checkAnswer();
+    }
 }
 
 function checkAnswer(){
