@@ -1,11 +1,10 @@
 function show(){
     document.getElementById("loader").style.display = "none";
-    document.getElementById("start").style.display = "block";
+    document.getElementById("start").style.display = "flex";
     document.getElementById("bgvid").style.display = "block";
 }
 
 var counter1 = 0;
-
 function changeProgress(){
     counter1++;
     setTimeout(function(){document.getElementById("progress").innerHTML += ".";}, 500);
@@ -29,9 +28,9 @@ function changeProgress(){
     }
 }
 
-window.setInterval(changeProgress, 2000);
-
-
+function intervalSet(){
+    setInterval(changeProgress, 2000);
+}
 
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
@@ -48,11 +47,13 @@ const timeCount = document.querySelector(".timer .timer_sec");
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
+    document.getElementById("start").style.display = "none";
 }
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
+    document.getElementById("start").style.display = "flex";
 }
 
 // if continueQuiz button clicked
@@ -91,7 +92,7 @@ restart_quiz.onclick = ()=>{
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Time Left"; //change the text of timeText to Time Left
+    timeText.textContent = "Pozostało"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 }
 
@@ -114,7 +115,7 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
+        timeText.textContent = "Pozostało"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
@@ -242,7 +243,7 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> z <p>'+ questions.length +'</p> Pytań</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 

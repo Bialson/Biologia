@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="shortcut icon" href="/img/favicon_html.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <title>BiologiaNow</title>
 </head>
-<body>
+<body onload="javascript:intervalSet();">
     <div id="loader">
         <p><img src="/img/favicon_html.png" width="150" height="150"></p>
         <div class="loader loader-1">
@@ -24,7 +25,12 @@
         <source src="/img/background.mp4" type="video/webm">
     </video>
 
-    <div class="start_btn" id="start"><button>Start Quiz</button></div>
+    <div class="start_btn" id="start">
+        <p><img src="/img/favicon_html.png" width="200" height="200"></p>
+        <button><span id="startText">Start</span><span class="material-icons-outlined">
+            play_arrow
+        </span></button>
+    </div>
 
     <!-- Info Box -->
     <div class="info_box">
@@ -37,7 +43,7 @@
             <div class="info">5. Punkty otrzymasz na podstawie poprawnych odpowiedzi.</div>
         </div>
         <div class="buttons">
-            <button class="quit">Opuść quiz</button>
+            <button class="quit">Wyjdź</button>
             <button class="restart">Dalej</button>
         </div>
     </div>

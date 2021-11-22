@@ -56,6 +56,17 @@ video {
     transform: translate(-50%, -50%) scale(1);
 }
 
+#start{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: rgba(1, 1, 1, 0.7);
+    border-radius: 5px;
+}
+
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
@@ -66,10 +77,31 @@ video {
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
+    transition: width 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    width: 25%;
+    height: 15%;
 }
 
-#start{
+.start_btn .material-icons-outlined{
+    vertical-align: middle;
+    font-size: 40px;
+    padding: 0;
     display: none;
+    transition: width 0.5s ease-in-out;
+}
+
+.start_btn button:hover .material-icons-outlined{
+    display: inline-block;
+}
+
+.start_btn button:hover #startText{
+    display: none;
+}
+
+.start_btn button:hover{
+    width: 40%;
+    background-color: #7BD661;
+    color: white;
 }
 
 .info_box{
