@@ -32,6 +32,20 @@ function intervalSet(){
     setInterval(changeProgress, 2000);
 }
 
+let infoButton = document.getElementById("start_info");
+infoButton.addEventListener("mouseover", function(){
+    if(document.getElementById("authors").style.display = "none"){
+        document.getElementById("p1").style.display = "none";
+        document.getElementById("p1_btn").style.display = "none";
+        document.getElementById("authors").style.display = "flex";
+    }
+}, false);
+infoButton.addEventListener("mouseout", function(){
+    document.getElementById("p1").style.display = "block";
+    document.getElementById("p1_btn").style.display = "block";
+    document.getElementById("authors").style.display = "none";
+},false);
+
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
@@ -92,7 +106,7 @@ restart_quiz.onclick = ()=>{
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Pozostało"; //change the text of timeText to Time Left
+    timeText.textContent = "Pozostało:"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 }
 
@@ -115,7 +129,7 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Pozostało"; //change the timeText to Time Left
+        timeText.textContent = "Pozostało:"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
