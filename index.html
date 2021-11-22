@@ -7,65 +7,88 @@
     <link rel="stylesheet" href="/style/anim.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="shortcut icon" href="/img/favicon_html.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>BiologiaNow</title>
 </head>
 <body>
     <div id="loader">
-        <p><img src="/img/favicon_html.png" width="100" height="100"></p>
+        <p><img src="/img/favicon_html.png" width="150" height="150"></p>
         <div class="loader loader-1">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
         </div>
         <p id="progress">Loading</p>
     </div>
+    
     <video playsinline autoplay muted loop id="bgvid">
         <source src="/img/background.mp4" type="video/webm">
     </video>
-    <div id="container" onclick="javascript:selectAnswer();">
-        <div id="start">
-            <p>BiologiaNow <img src="/img/favicon_html.png" width="100" height="100"></p>
-            <div id="wrapper">
-                <a href="javascript:startGame();" class="my-super-cool-btn">
-                    <div class="dots-container">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    </div>
-                    <span>Start</span>
-                </a>
-            </div>
+
+    <div class="start_btn" id="start"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Zasady quizu</span></div>
+        <div class="info-list">
+            <div class="info">1. Pamietaj, masz tylko <span>15 sekund</span> na odpowiedź.</div>
+            <div class="info">2. Po wybraniu odpowiedzi nie można jej cofnąć.</div>
+            <div class="info">3. Nie możesz wybrać żadnej opcji po upływie czasu.</div>
+            <div class="info">4. Nie możesz wyjść z quizu podczas gry.</div>
+            <div class="info">5. Punkty otrzymasz na podstawie poprawnych odpowiedzi.</div>
         </div>
-        <div id="box">
-            <div id="bar">
-                <p id="bar-title">Quiz application</p>
-                <progress id="progressBar" max="100" value="0"></progress>
-                <p id="bar-progress">0% progress</p>
-            </div>
-            <hr>
-            <div id="quest" class="quest 1">
-                <p id="quest-title">What is the full form of HTTP?</p>
-                <br>
-                <ul>
-                    <li class="quest">Lorem ipsum dolor sit amet aper.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet dolor.</li>
-                </ul>
-                <button id="next">Next</button>
-            </div>
-            <div id="quest1" class="quest 2">
-                <p id="quest-title">What is the full form of HTTP?</p>
-                <br>
-                <ul>
-                    <li class="quest">Lorem ipsum dolor sit amet aper.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet.</li>
-                    <li class="quest">Lorem ipsum dolor sit amet dolor.</li>
-                </ul>
-            </div>
+        <div class="buttons">
+            <button class="quit">Opuść quiz</button>
+            <button class="restart">Dalej</button>
         </div>
     </div>
-    <script src="/script/script.js"></script>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+          <div class="title">Quiz Biologia</div>
+          <div class="timer">
+              <div class="time_left_txt">Pozostało:</div>
+              <div class="timer_sec">15</div>
+          </div>
+          <div class="time_line"></div>
+      </header>
+      <section>
+          <div class="que_text">
+            <!-- Here I've inserted question from JavaScript -->
+          </div>
+          <div class="option_list">
+            <!-- Here I've inserted options from JavaScript -->
+          </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+              <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Następne pytanie</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Ukończyłeś quiz!</div>
+        <div class="score_text">
+          <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Powtórz Quiz</button>
+            <button class="quit">Opuść Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
 </body>
 </html>
