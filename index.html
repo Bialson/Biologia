@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/anim.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="shortcut icon" href="/img/favicon_html.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/anim.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/favicon_html.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <title>BiologiaNow</title>
 </head>
 <body onload="javascript:intervalSet();">
     <div id="loader">
-        <p><img src="/img/favicon_html.png" width="150" height="150"></p>
+        <p><img src="./img/favicon_html.png" width="150" height="150"></p>
         <div class="loader loader-1">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -22,11 +22,11 @@
     </div>
 
     <video playsinline autoplay muted loop id="bgvid">
-        <source src="/img/background.mp4" type="video/webm">
+        <source src="./img/background.mp4" type="video/webm">
     </video>
 
     <div class="start_btn" id="start">
-        <p id="p1"><img src="/img/favicon_html.png" width="200" height="200"></p>
+        <p id="p1"><img src="./img/favicon_html.png" width="200" height="200"></p>
         <button id="p1_btn"><span id="startText">Start</span><span class="material-icons-outlined" id="startButton">
             play_arrow
         </span></button>
@@ -112,5 +112,8 @@
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script.js"></script>
+    <script>
+        require("js/render.js");
+    </script>
 </body>
 </html>

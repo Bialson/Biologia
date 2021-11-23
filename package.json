@@ -1,0 +1,22 @@
+{
+  "name": "biologia",
+  "version": "1.0.0",
+  "description": "Quiz",
+  "main": "./js/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bialson/Biologia.git"
+  },
+  "author": "JanBud Software",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bialson/Biologia/issues"
+  },
+  "homepage": "https://github.com/Bialson/Biologia#readme",
+  "dependencies": {
+    "electron": "^16.0.1"
+  }
+}
