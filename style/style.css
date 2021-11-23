@@ -154,10 +154,10 @@ video {
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 40px;
     border-radius: 5px 5px 0 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .info_box .info-list{
@@ -171,7 +171,7 @@ video {
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #007bff;
+    color: #C70039;
 }
 .info_box .buttons{
     height: 60px;
@@ -459,7 +459,8 @@ footer button.show{
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    background: #7BD661;
+    border: #7BD661;
 }
 
 .buttons button.quit{
@@ -469,5 +470,6 @@ footer button.show{
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #007bff;
+    background: #C70039;
+    border: #C70039;
 }
