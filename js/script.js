@@ -70,7 +70,28 @@ exit_btn.onclick = ()=>{
     document.getElementById("start").style.display = "flex";
 }
 
-number = Math.floor(Math.random() * questions.length);
+var drawnedQuestion = [];
+
+function createUniqueQuestion() {
+    let random = (Math.random() * questions.length).toFixed();
+    random = Number(random);
+    if(!drawnedQuestion.includes(random)){
+        drawnedQuestion.push(random);
+        return random;
+    }
+    else{
+        if(drawnedQuestion.length < questions.length){
+            return createUniqueQuestion(questions.length);
+        }
+        else{
+            return false;
+        }
+    }
+}
+
+number = createUniqueQuestion();
+console.log(number);
+
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
@@ -125,7 +146,12 @@ next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
-        number = Math.floor(Math.random() * questions.length);
+        number = createUniqueQuestion();
+        // if(drawnedQuestion.includes(number)){
+        //     number = Math.floor(Math.random() * questions.length);
+        //     drawnedQuestion.push(number); 
+        // }
+        console.log(number);
         showQuetions(number); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
         clearInterval(counter); //clear counter
