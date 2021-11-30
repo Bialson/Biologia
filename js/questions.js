@@ -2,167 +2,167 @@
 let questions = [
     {
     numb: 1,
-    question: "Końcowy odcinek jelita grubego to: ",
-    answer: "Odbyt",
+    question: "Ekologicznym pojazdem jest: ",
+    answer: "Rower",
     options: [
-      "Odbyt",
-      "Wyrostek robaczkowy",
-      "Jelito czcze",
-      "Okrężnica"
+      "Rower",
+      "Samochód osobowy",
+      "Skuter",
+      "Samolot"
     ]
   },
     {
     numb: 2,
-    question: "Początkowy odcinek jelita cienkiego to: ",
-    answer: "Dwunastnica",
+    question: "Symbolem Ligi Ochrony przyrody jest: ",
+    answer: "Żubr",
     options: [
-      "Trzustka",
-      "Okrężnica",
-      "Dwunastnica",
-      "Odźwiernik"
+      "Kozica",
+      "Łoś",
+      "Koza",
+      "Żubr"
     ]
   },
     {
     numb: 3,
-    question: "Jaką funkcję pełni wyrostek robaczkowy?",
-    answer: "Jest magazynem pożytecznych bakterii",
+    question: "Dzień Ziemi obchodzimy w: ",
+    answer: "Kwietniu",
     options: [
-      "Magazynuje wszystkie odpady trawienne",
-      "Żadnej, to pozostałość ewolucyjna",
-      "Wytwarza enzymy trawienne",
-      "Jest magazynem pożytecznych bakterii"
+      "Wrześniu",
+      "Marcu",
+      "Lipcu",
+      "Kwietniu"
     ]
   },
     {
     numb: 4,
-    question: "Wskaż prawidłową kolejność układu pokarmowego.",
-    answer: "Jama ustna, gardło, jelito cienkie, jelito grube, odbyt",
+    question: "Recykling to: ",
+    answer: "Odzyskiwanie surówców wtórnych",
     options: [
-      "Jama ustna, krtań, jelito cienkie, jelito grube, odbyt",
-      "Jama ustna, gardło, jelito cienkie, jelito grube, odbyt",
-      "Jama ustna, gardło dwunastnica, żołądek, jelito cienkie",
-      "Jama ustna, krtań, okrężnica, jelito cienkie, odbyt"
+      "Odzyskiwanie surówców wtórnych",
+      "Oczysczanie ścieków",
+      "Rekultywacja hałd",
+      "Pozyskiwanie energii słonecznej"
     ]
   },
     {
     numb: 5,
-    question: "Które z wymienionych posiada Pęcherz rektalny?",
-    answer: "Pająki",
+    question: "Kwaśne deszcze powodują: ",
+    answer: "Zakwaszenie gleb i niszczenie zabytków",
     options: [
-      "Ryby",
-      "Szczury",
-      "Gołębie",
-      "Pająki"
+      "Ocieplenie klimatu",
+      "Oczyszczanie rzek i jezior z drobnoustrojów",
+      "Rozwój roślin",
+      "Zakwaszenie gleb i niszczenie zabytków"
     ]
   },
   {
     numb: 6,
-    question: "Który enzym trawi tłuszcze w dwunastnicy?",
-    answer: "Lipaza",
+    question: "Dziura ozonowa wywołuje u ludzi: ",
+    answer: "Nowotwory skóry",
     options: [
-      "Lipaza",
-      "Trypsyna",
-      "Pepsyna",
-      "W dwunastnicy nie ma enzymów trawiących tłuszcze "
+      "Nowotwory skóry",
+      "Szybsze opalanie",
+      "Lepsze samopoczucie",
+      "Złe samopoczucie"
     ]
   },
   {
     numb: 7,
-    question: "Jeden obieg krwi mają:",
-    answer: "Ryby",
+    question: "Ile obecnie w Polsce mamy parków narodowych: ",
+    answer: "23",
     options: [
-      "Ptaki",
-      "Gady",
-      "Płazy",
-      "Ryby"
+      "20",
+      "17",
+      "34",
+      "23"
     ]
   },
   {
     numb: 8,
-    question: "Mały obieg krwi rozpoczyna się w: ",
-    answer: "Prawej komorze serca",
+    question: "Pestycydy to: ",
+    answer: "Chemiczne środki ochrony roślin",
     options: [
-      "Prawym przedsionku serca",
-      "Lewym przedsionku serca",
-      "Prawej komorze serca",
-      "Lewej komorze serca"
+      "Detergenty",
+      "Chemiczne środki ochrony roślin",
+      "Pyły azbestowe",
+      "Środki chwastobójcze"
     ]
   },
   {
     numb: 9,
-    question: "Do której części ciała nie dociera krew?",
-    answer: "Rogówka oka",
+    question: "Pod pojęciem „Zielone płuca Ziemi” rozumiemy: ",
+    answer: "Lasy",
     options: [
-      "Szpiku kostnego",
-      "Jelita grubego",
-      "Pięty",
-      "Rogówka oka"
+      "Pola",
+      "Łąki",
+      "Lasy",
+      "Góry"
     ]
   },
   {
     numb: 10,
-    question: "Co jest skutkiem niedotlenienia mięśnia sercowego?",
-    answer: "Zawał ",
+    question: "Jak należy segregować odpady: ",
+    answer: "Metale, szkło, papier, tworzywa sztuczne wkładać do osobnych pojemników",
     options: [
-      "Miażdzyca",
-      "Zawał ",
-      "Przerost mięśnia",
-      "Wylew"
+      "Nie trzeba ich segregować",
+      "Wyrzucać je w foliowych workach, aby nie mieszały się",
+      "Metale, szkło, papier, tworzywa sztuczne wkładać do osobnych pojemników",
+      "---"
     ]
   },
   {
     numb: 11,
-    question: "Prostata umiejscowiona jest:",
-    answer: "Pod pęcherzem",
+    question: "Jak zmniejszyć ilość śmieci: ",
+    answer: "Kupować tylko potrzebne rzeczy i segregować odpadki",
     options: [
-      "Pod pęcherzem",
-      "Obok najądrza",
-      "W zespoleniu łonowym",
-      "W ciałach jamistych prącia"
+      "Kupować tylko potrzebne rzeczy i segregować odpadki",
+      "Zaraz wyrzucać je do śmietnika",
+      "Nie da się zmniejszyć",
+      "---"
     ]
   },
   {
     numb: 12,
-    question: "W pęcherzykach płucnych występuje nabłonek:",
-    answer: "Jednowarstwowy plaski",
+    question: "Jak nazywa się proces przetwarzania zużytych surowców na nowe produkty: ",
+    answer: "Recykling",
     options: [
-      "Jednowarstwowy szescienny",
-      "Jednowarstwowy wielorzedowy",
-      "Jednowarstwowy walcowaty",
-      "Jednowarstwowy plaski"
+      "Restrukturyzacja",
+      "Rekonwalescencja",
+      "Recykling",
+      "---"
     ]
   },
   {
     numb: 13,
-    question: "Około ilu pęcherzyków płucnych posiada człowiek?",
-    answer: "300–500 milionów",
+    question: "Najmocniejsze kości w naszym organizmie to: ",
+    answer: "Kości udowe",
     options: [
-      "600-700 tysięcy",
-      "ponad 900 tysięcy",
-      "300–500 milionów",
-      "500-800 milionów"
+      "Kości obojczykowe",
+      "Kości stopy",
+      "Kości czaszki",
+      "Kości udowe"
     ]
   },
   {
     numb: 14,
-    question: "Z ilu płatów składa się wątroba?",
-    answer: "4 płatów",
+    question: "Najmniejsza kość w ludzkim ciele to: ",
+    answer: "Strzemiączko",
     options: [
-      "1 głównego prawego",
-      "2 płatów",
-      "3 płatów bocznych",
-      "4 płatów"
+      "Kość gnykowa",
+      "Kość ogonowa",
+      "Młoteczek",
+      "Strzemiączko"
     ]
   },
   {
     numb: 15,
-    question: "Staw skokowy górny to inaczej?",
-    answer: "Staw skokowo-goleniowy",
+    question: "Ile średnio waży cały układ kostny dorosłego mężczyzny: ",
+    answer: "12 kg",
     options: [
-      "Staw skokowo-goleniowy",
-      "Staw skokowy przedni",
-      "Staw skokowo-piętowo-łódkowy",
-      "Staw kolanowo-udowy"
+      "12 kg",
+      "Nie więcej niż 10 kg",
+      "20 kg",
+      "24 kg"
     ]
   },
   {
@@ -178,13 +178,13 @@ let questions = [
   },
   {
     numb: 17,
-    question: "Co należy do szkieletu osiowego?",
-    answer: "Czaszka, kręgosłup, klatka piersiowa",
+    question: "Połączenia ruchome kości to: ",
+    answer: "Stawy",
     options: [
-      "Kości kończyn, klatka piersiowa, czaszka",
-      "Czaszka, kręgosłup, klatka piersiowa, kości ręki",
-      "Czaszka i kręgosłup",
-      "Czaszka, kręgosłup, klatka piersiowa"
+      "Mięśnie",
+      "Stawy",
+      "Ścięgna",
+      "Chrząstki"
     ]
   },
   {
@@ -211,13 +211,90 @@ let questions = [
   },
   {
     numb: 20,
-    question: "Ile przeciwstawnych palców posiada człowiek?",
-    answer: "4 palce",
+    question: "Ile kości liczy szkielet dorosłego człowieka: ",
+    answer: "206",
     options: [
-      "1 u lewej dłoni",
-      "2 palce",
-      "4 palce",
-      "5 palców"
+      "206",
+      "Dokładnie 193",
+      "347",
+      "69"
+    ]
+  },
+  {
+    numb: 21,
+    question: "Serce składa się z: ",
+    answer: "Z dwóch przedsionków i dwóch komór ",
+    options: [
+      "206 przedsionków i komór",
+      "Z dwóch przedsionków i trzech komór",
+      "Z dwóch przedsionków i dwóch komór",
+      "Z pięciu przedsionków i dwóch komór "
+    ]
+  },
+  {
+    numb: 22,
+    question: "Gruczoł w przedniej części szyi to: ",
+    answer: "Tarczyca",
+    options: [
+      "Grasica",
+      "Szyszynka",
+      "Chrząstka",
+      "Tarczyca"
+    ]
+  },
+  {
+    numb: 23,
+    question: "Rogówka, twardówka i tęczówka to części: ",
+    answer: "Oka",
+    options: [
+      "Oka",
+      "Mózgu",
+      "Paznokci",
+      "Włosów"
+    ]
+  },
+  {
+    numb: 24,
+    question: "Kość potyliczna to część: ",
+    answer: "Czaszki",
+    options: [
+      "Miednicy",
+      "Klatki piersiowej",
+      "Nogi",
+      "Czaszki"
+    ]
+  },
+  {
+    numb: 25,
+    question: "Mózg składa się z dwóch: ",
+    answer: "Półkuli",
+    options: [
+      "Zwojów",
+      "Półkuli",
+      "Części",
+      "Płatów"
+    ]
+  },
+  {
+    numb: 26,
+    question: "Mięsień zwany bicepsem to część: ",
+    answer: "Ramienia",
+    options: [
+      "Ramienia",
+      "Pośladka",
+      "Uda",
+      "Brzucha"
+    ]
+  },
+  {
+    numb: 27,
+    question: "Co oznacza nazwa „Homo erectus”: ",
+    answer: "Człowiek wyprostowany",
+    options: [
+      "Człowiek rozumny",
+      "Człowiek pierwotny",
+      "Człowiek zdolny",
+      "Człowiek wyprostowany"
     ]
   },
 ];
