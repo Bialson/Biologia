@@ -297,4 +297,37 @@ let questions = [
       "Człowiek wyprostowany"
     ]
   },
+  {
+    numb: 28,
+    question: "Zmienność występująca w gronie osobników należących do jednej populacji to różnorodność: ",
+    answer: "Genetyczna",
+    options: [
+      "Genetyczna",
+      "Gatunkowa",
+      "Indywidualna",
+      "Ekosystemowa"
+    ]
+  },
+  {
+    numb: 29,
+    question: "Który z wymienionych organizmów nie jest pasożytem zewnętrznym: ",
+    answer: "Glista ludzka",
+    options: [
+      "Wesz",
+      "Glista ludzka",
+      "Pchła",
+      "Pijawka"
+    ]
+  },
+  {
+    numb: 30,
+    question: "Ile zębów stałych posiada dorosły człowiek: ",
+    answer: "32",
+    options: [
+      "32",
+      "44",
+      "102",
+      "3"
+    ]
+  },
 ];

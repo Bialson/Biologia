@@ -145,12 +145,11 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
+        if(que_count == 20){
+            showResult();
+        }
         que_numb++; //increment the que_numb value
         number = createUniqueQuestion();
-        // if(drawnedQuestion.includes(number)){
-        //     number = Math.floor(Math.random() * questions.length);
-        //     drawnedQuestion.push(number); 
-        // }
         console.log(number);
         showQuetions(number); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
@@ -170,9 +169,9 @@ next_btn.onclick = ()=>{
 // getting questions and options from array
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
-
+    
     //creating a new span and div tag for question and option and passing the value using array index
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>' + questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
@@ -231,15 +230,15 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 15){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span> Gratulacje! 🎉, Masz <p>'+ userScore +'</p> z <p>'+ questions.length +'</p> pkt </span>';
+        let scoreTag = '<span> Gratulacje! 🎉, Masz <p>'+ userScore +'</p> z <p>'+ 20 +'</p> pkt </span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 8){ // if user scored more than 1
-        let scoreTag = '<span> Super! 😎, Masz <p>'+ userScore +'</p> z <p>'+ questions.length +'</p> pkt </span>';
+        let scoreTag = '<span> Super! 😎, Masz <p>'+ userScore +'</p> z <p>'+ 20 +'</p> pkt </span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span> Przykro mi... 😐, Masz tylko <p>'+ userScore +'</p> z <p>'+ questions.length +'</p> pkt</span>';
+        let scoreTag = '<span> Przykro mi... 😐, Masz tylko <p>'+ userScore +'</p> z <p>'+ 20 +'</p> pkt</span>';
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -290,7 +289,7 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> z <p>'+ questions.length +'</p> Pytań</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> z <p>'+ 20 +'</p> Pytań</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 

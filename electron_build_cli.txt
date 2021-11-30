@@ -1,0 +1,1 @@
+electron-packager . BiologiaNow --overwrite --asar=true --platform=win32 --arch=ia32 --icon="img/icon.ico" --out=release-builds --version-string.CompanyName="JanBud Software" --version-string.FileDescription="Quiz App" --version-string.ProductName="BiologiaNow" --prune=true
