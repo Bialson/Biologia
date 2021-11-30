@@ -192,7 +192,7 @@ video {
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid rgb(5, 6, 45);
     transition: all 0.3s ease;
 }
 
@@ -225,9 +225,9 @@ video {
 }
 
 .quiz_box header .timer{
-    color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: black;
+    background: #F1F1F1;
+    border: 1px solid #BABABA;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -263,7 +263,7 @@ video {
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #007bff;
+    background: #75B800;
 }
 
 section{
@@ -282,8 +282,8 @@ section .option_list{
 }
 
 section .option_list .option{
-    background: aliceblue;
-    border: 1px solid #84c5fe;
+    background: #F1F1F1;
+    border: 1px solid #BABABA;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -377,8 +377,8 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background-color: rgb(5, 6, 45);
+    border: 1px solid rgb(5, 6, 45);
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -387,7 +387,8 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    background-color: #1796D8;
+    border: 1px solid #1796D8;
 }
 
 footer button.show{
@@ -449,13 +450,13 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid rgb(5, 6, 45);
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
     color: #fff;
-    background: #007bff;
+    background: rgb(5, 6, 45);
 }
 
 .buttons button.restart:hover{
@@ -464,7 +465,7 @@ footer button.show{
 }
 
 .buttons button.quit{
-    color: #007bff;
+    color: rgb(5, 6, 45);
     background: #fff;
 }
 
