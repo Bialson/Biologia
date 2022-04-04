@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Bialson/Biologia#readme",
   "dependencies": {
-    "electron": "^16.0.1"
+    "electron": "^16.0.6"
   }
 }
